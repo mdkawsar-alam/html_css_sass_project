@@ -8,7 +8,6 @@ $p-color: white;
 $header-top-color: #f1c567c0;
 
 body {
-  
   font-family: "Montserrat", sans-serif;
   font-family: "Poppins", sans-serif;
   font-family: "Roboto", sans-serif;
@@ -81,14 +80,12 @@ header {
   }
   //header main start  here
   .header_main {
-    background-color: rgb(49, 140, 214);
+    background-color: aliceblue;
     width: 80%;
     height: 80px;
 
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center1;
+   ;
     .header_main_left {
       width: 30%;
       display: flex;
@@ -105,6 +102,7 @@ header {
     .header_main_main {
       width: 40%;
       nav {
+        height: auto;
         ul {
           display: flex;
           li {
@@ -114,6 +112,11 @@ header {
               text-decoration: none;
               color: #353434;
               font-family: "Poppins", sans-serif;
+              transition: all 0.3s;
+            }
+            a:hover {
+              background-color: #c29d59;
+              padding: 10px;
             }
           }
         }
@@ -134,3 +137,47 @@ header {
 }
 
 // responsive here
+@media screen and (max-width: 620px) {
+  header {
+   
+    .header-top {
+      display: none;
+    }
+    .header_main {
+     
+      height: max-content;
+      width: 100%;
+      display: flex;
+
+      .header_main_left {
+        display: none;
+      }
+      .header_main_main {
+      
+        
+        width: 50%;
+
+        ul {
+          display: flex;
+          flex-direction: column-reverse;
+          li {
+            a:hover {
+              border-radius: 18px;
+             
+            }
+          }
+        }
+      }
+    }
+    .header_main_right {
+      width: 50%;
+      display: flex;
+     
+      justify-content: center;
+      align-items: center;
+      
+     
+      
+    }
+  }
+}
