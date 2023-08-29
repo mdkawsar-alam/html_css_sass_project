@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+//variables
+$p-color: white;
+$header-top-color: #f1c567c0;
+
+// header top desktop design here
+.header-top {
+  background: #161616;
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  .header-top-left {
+    margin-left: 20px;
+    width: 50%;
+
+    ul {
+      display: flex;
+
+      li {
+        display: flex;
+        i {
+          margin-top: 10px;
+        }
+
+        a {
+          i {
+            margin-top: 10px;
+          }
+        }
+        p {
+          margin: 10px;
+          color: $p-color;
+        }
+      }
+    }
+  }
+  .header-top-right {
+    width: 50%;
+    ul {
+      margin-top: 10px;
+      li {
+        display: inline;
+        float: right;
+        list-style: none;
+        margin: 0 10px;
+        padding: 10px;
+        a {
+          text-decoration: none;
+          color: $p-color;
+          i{
+           font-size:22px;
+          }
+          i:hover 16px{
+            background-color: $header-top-color;
+         
+          }
+          
+        }
+        a:hover{
+          color: $header-top-color;
+        }
+      }
+    }
+  }
+}
