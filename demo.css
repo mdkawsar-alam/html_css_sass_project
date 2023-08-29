@@ -74,7 +74,7 @@ header .header-top .header-top-right ul li a:hover {
 }
 header .header_main {
   width: 80%;
-  top: 60px;
+  top: 70px;
   position: absolute;
   background-color: white;
   height: 80px;
@@ -108,13 +108,14 @@ header .header_main .header_main_main nav ul li {
 }
 header .header_main .header_main_main nav ul li a {
   text-decoration: none;
-  color: #353434;
+  color: #000000;
   font-family: "Poppins", sans-serif;
   transition: all 0.3s;
 }
 header .header_main .header_main_main nav ul li a:hover {
   background-color: #c29d59;
   padding: 10px;
+  border-radius: 16px;
 }
 header .header_main .header_main_right {
   width: 30%;
@@ -167,9 +168,12 @@ main .banner .btn:hover {
     display: none;
   }
   header .header_main {
-    height: -moz-max-content;
-    height: max-content;
     width: 100%;
+    top: 10px;
+    color: #fff6f6;
+    position: unset;
+    background-color: rgba(17, 202, 147, 0.562);
+    height: 50vh;
     display: flex;
   }
   header .header_main .header_main_left {
@@ -178,12 +182,16 @@ main .banner .btn:hover {
   header .header_main .header_main_main {
     width: 50%;
   }
-  header .header_main .header_main_main ul {
+  header .header_main .header_main_main nav ul {
     display: flex;
     flex-direction: column-reverse;
   }
-  header .header_main .header_main_main ul li a:hover {
-    border-radius: 18px;
+  header .header_main .header_main_main nav ul li a:hover {
+    background-color: #409ab1;
+    padding: 7px;
+    color: white;
+    font-weight: bold;
+    border-radius: 16px;
   }
   header .header_main_right {
     width: 50%;

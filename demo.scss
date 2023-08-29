@@ -85,11 +85,12 @@ header {
   //header main start  here
   .header_main {
     width: 80%;
-    top: 60px;
+    top: 70px;
     position: absolute;
     background-color: white;
     height: 80px;
     display: flex;
+  
     .header_main_left {
       width: 30%;
       display: flex;
@@ -114,13 +115,14 @@ header {
             margin: 10px;
             a {
               text-decoration: none;
-              color: #353434;
+              color: #000000;
               font-family: "Poppins", sans-serif;
               transition: all 0.3s;
             }
             a:hover {
               background-color: #c29d59;
               padding: 10px;
+              border-radius: 16px;
             }
           }
         }
@@ -182,17 +184,22 @@ main {
 }
 
 
-// responsive here
+//mobile device  responsive here
 @media screen and (max-width: 620px) {
+  //header responsive here
   header {
     .header-top {
       display: none;
     }
     .header_main {
      
-
-      height: max-content;
       width: 100%;
+      top: 10px;
+      color: #fff6f6;
+      position: unset;
+      background-color: rgba(17, 202, 147, 0.562);
+      
+      height: 50vh;
       display: flex;
 
       .header_main_left {
@@ -201,12 +208,19 @@ main {
       .header_main_main {
         width: 50%;
 
-        ul {
-          display: flex;
-          flex-direction: column-reverse;
-          li {
-            a:hover {
-              border-radius: 18px;
+        nav{
+          ul {
+            display: flex;
+            flex-direction: column-reverse;
+            li {
+              
+              a:hover {
+                background-color: #409ab1;
+                padding: 7px;
+                color: white;
+                font-weight: bold;
+                border-radius: 16px;
+              }
             }
           }
         }
@@ -220,5 +234,7 @@ main {
       align-items: center;
     }
   }
+  // main responsive here
+
 }
 
