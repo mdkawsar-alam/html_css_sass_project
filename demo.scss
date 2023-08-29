@@ -20,8 +20,12 @@ header {
   justify-content: center;
   align-items: center;
   .header-top {
+    height:20vh;
+    padding-bottom: 70px;
+    position: relative;
     background: #161616;
     display: flex;
+  
     justify-content: space-between;
     width: 100%;
 
@@ -80,12 +84,12 @@ header {
   }
   //header main start  here
   .header_main {
-    background-color: aliceblue;
     width: 80%;
+    top: 60px;
+    position: absolute;
+    background-color: white;
     height: 80px;
-
     display: flex;
-   ;
     .header_main_left {
       width: 30%;
       display: flex;
@@ -136,15 +140,57 @@ header {
   }
 }
 
+// main section style here
+
+main {
+  .banner {
+    background-image: url("/imgs/banner-img.jpg");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin-top: 0;
+    color: white;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // position: relative;
+
+    h1 {
+      font-size: 46px;
+      font-family: "Montserrat", sans-serif;
+      letter-spacing: 0.4rem;
+    }
+    p {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      line-height: 20px;
+    }
+    .btn {
+      padding: 10px;
+      font-size: 14px;
+      border: none;
+      margin: 10px;
+    }
+    .btn:hover {
+      background-color: #c29d59;
+      color: white;
+    }
+  }
+}
+
+
 // responsive here
 @media screen and (max-width: 620px) {
   header {
-   
     .header-top {
       display: none;
     }
     .header_main {
      
+
       height: max-content;
       width: 100%;
       display: flex;
@@ -153,8 +199,6 @@ header {
         display: none;
       }
       .header_main_main {
-      
-        
         width: 50%;
 
         ul {
@@ -163,7 +207,6 @@ header {
           li {
             a:hover {
               border-radius: 18px;
-             
             }
           }
         }
@@ -172,12 +215,10 @@ header {
     .header_main_right {
       width: 50%;
       display: flex;
-     
+
       justify-content: center;
       align-items: center;
-      
-     
-      
     }
   }
 }
+
