@@ -7,64 +7,130 @@
 $p-color: white;
 $header-top-color: #f1c567c0;
 
+body {
+  
+  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
 // header top desktop design here
-.header-top {
-  background: #161616;
+header {
   display: flex;
-  justify-content: space-between;
-
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  .header-top-left {
-    margin-left: 20px;
-    width: 50%;
+  .header-top {
+    background: #161616;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 
-    ul {
-      display: flex;
+    align-items: center;
+    .header-top-left {
+      margin-left: 20px;
+      width: 50%;
 
-      li {
+      ul {
         display: flex;
-        i {
-          margin-top: 10px;
-        }
 
-        a {
+        li {
+          display: flex;
           i {
             margin-top: 10px;
           }
+
+          a {
+            i {
+              margin-top: 10px;
+            }
+          }
+          p {
+            margin: 10px;
+            color: $p-color;
+          }
         }
-        p {
-          margin: 10px;
-          color: $p-color;
+      }
+    }
+    .header-top-right {
+      width: 50%;
+      ul {
+        margin-top: 10px;
+        li {
+          display: inline;
+          float: right;
+          list-style: none;
+          margin: 0 10px;
+          padding: 10px;
+          a {
+            text-decoration: none;
+            color: $p-color;
+            i {
+              font-size: 22px;
+            }
+            i:hover {
+              background-color: $header-top-color;
+            }
+          }
+          a:hover {
+            color: $header-top-color;
+          }
         }
       }
     }
   }
-  .header-top-right {
-    width: 50%;
-    ul {
-      margin-top: 10px;
-      li {
-        display: inline;
-        float: right;
-        list-style: none;
-        margin: 0 10px;
+  //header main start  here
+  .header_main {
+    background-color: rgb(49, 140, 214);
+    width: 80%;
+    height: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center1;
+    .header_main_left {
+      width: 30%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .btn {
+        background-color: #c29d59;
+        border: none;
+        color: rgb(243, 243, 243);
+        font-size: medium;
         padding: 10px;
+      }
+    }
+    .header_main_main {
+      width: 40%;
+      nav {
+        ul {
+          display: flex;
+          li {
+            list-style: none;
+            margin: 10px;
+            a {
+              text-decoration: none;
+              color: #353434;
+              font-family: "Poppins", sans-serif;
+            }
+          }
+        }
+      }
+    }
+    .header_main_right {
+      width: 30%;
+      h1 {
+        text-align: center;
         a {
           text-decoration: none;
-          color: $p-color;
-          i{
-           font-size:22px;
-          }
-          i:hover 16px{
-            background-color: $header-top-color;
-         
-          }
-          
-        }
-        a:hover{
-          color: $header-top-color;
+          color: #161616;
+          font-family: "Lobster", cursive;
         }
       }
     }
   }
 }
+
+// responsive here
