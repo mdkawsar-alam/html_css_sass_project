@@ -93,6 +93,9 @@ header .header_main .header_main_left .btn {
   font-size: medium;
   padding: 10px;
 }
+header .header_main .header_main_left .btn:hover {
+  background-color: #ce8e18;
+}
 header .header_main .header_main_main {
   width: 40%;
 }
