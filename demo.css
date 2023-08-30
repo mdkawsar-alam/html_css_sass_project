@@ -168,14 +168,16 @@ main .tours_section {
   padding: 10px;
 }
 main .crad-container {
+  margin-top: 20px;
   display: grid;
   width: 100%;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
 main .crad-container .crad {
   border: none;
-  box-shadow: 5px 10px 8px #3b3a3a;
+  padding: 20px;
+  box-shadow: 5px 5px 8px #6d6b6b;
   text-align: center;
   transition: all 0.3s;
 }
@@ -207,7 +209,7 @@ footer {
   color: rgb(189, 183, 183);
   background-color: rgba(0, 0, 0, 0.952);
   text-align: center;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 footer .footer-container {
   display: flex;
@@ -370,5 +372,16 @@ footer .updet-news p {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  main .crad-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  footer .footer-container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20px;
   }
 }/*# sourceMappingURL=demo.css.map */

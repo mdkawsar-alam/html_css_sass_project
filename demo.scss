@@ -189,15 +189,17 @@ main {
   }
   //card section  style here
   .crad-container {
+    margin-top: 20px;
     display: grid;
     width: 100%;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3,1fr);
     gap: 10px;
 
     .crad {
       border: none;
+      padding: 20px;
 
-      box-shadow: 5px 10px 8px #3b3a3a;
+      box-shadow: 5px 5px 8px #6d6b6b;
       text-align: center;
       transition: all 0.3s;
       .crad-body {
@@ -234,7 +236,7 @@ footer {
   background-color: rgba(0, 0, 0, 0.952);
 
   text-align: center;
-  margin-top: 20px;
+  margin-top: 30px;
 
   .footer-container {
     display: flex;
@@ -420,4 +422,25 @@ footer {
       align-items: center;
     }
   }
+  //responsive card section
+ main{
+  .crad-container {
+  
+    grid-template-columns: repeat(1,1fr);
+
+  }
+ }
+
+  footer {
+    .footer-container {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding-top: 20px;
+     
+    
+}
+}
 }
