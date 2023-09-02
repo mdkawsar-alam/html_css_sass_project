@@ -133,7 +133,7 @@ header .header_main .header_main_right h1 a {
 }
 
 main .banner {
-  background-image: url("/imgs/banner-img.jpg");
+  background-image: url("./imgs/banner-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
